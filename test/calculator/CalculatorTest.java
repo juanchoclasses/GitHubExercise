@@ -1,6 +1,7 @@
 package calculator;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
@@ -12,9 +13,9 @@ import static org.junit.Assert.*;
  * @version 1.0
  */
 public class CalculatorTest {
-  
+
   private final Calculator calculator = new Calculator();
-  
+
   /**
    * Tests the addition operation of the calculator.
    * Verifies that the calculator correctly adds two numbers,
@@ -25,7 +26,7 @@ public class CalculatorTest {
     assertEquals(5, calculator.add(2, 3));
     assertEquals(0, calculator.add(-2, 2));
   }
-  
+
   /**
    * Tests the subtraction operation of the calculator.
    * Verifies that the calculator correctly subtracts two numbers,
@@ -36,7 +37,7 @@ public class CalculatorTest {
     assertEquals(-1, calculator.subtract(2, 3));
     assertEquals(0, calculator.subtract(2, 2));
   }
-  
+
   /**
    * Tests the multiplication operation of the calculator.
    * Verifies that the calculator correctly multiplies two numbers,
@@ -47,7 +48,7 @@ public class CalculatorTest {
     assertEquals(6, calculator.multiply(2, 3));
     assertEquals(0, calculator.multiply(0, 5));
   }
-  
+
   /**
    * Tests the division operation of the calculator.
    * Verifies that the calculator correctly divides two numbers,
@@ -58,7 +59,7 @@ public class CalculatorTest {
     assertEquals(2.0, calculator.divide(10, 5), 0.0001);
     assertEquals(0.5, calculator.divide(1, 2), 0.0001);
   }
-  
+
   /**
    * Tests that division by zero throws an ArithmeticException.
    * Verifies that the calculator properly handles the error case
@@ -68,18 +69,18 @@ public class CalculatorTest {
   public void testDivideByZero() {
     calculator.divide(1, 0);
   }
-  
+
   /**
    * Tests the power operation of the calculator.
    * Verifies that the calculator correctly raises a number to a power,
    * including cases with zero, negative, and positive exponents.
    */
-  /*
+
   @Test
   public void testPower() {
-    assertEquals(8, calculator.power(2, 3));
-    assertEquals(1, calculator.power(5, 0));
+    assertEquals(8, calculator.power(2, 3), 0.0001);
+    assertEquals(1, calculator.power(5, 0), 0.0001);
     assertEquals(0.25, calculator.power(2, -2), 0.0001);
   }
-  */
+
 }
