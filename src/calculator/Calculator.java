@@ -66,7 +66,8 @@ public class Calculator {
    * @param exponent the exponent
    * @return the result of base raised to the power of exponent
    */
+  /* 
   public double power(double base, double exponent) {
     return Math.pow(base, exponent);
-  }
+  } */
 }
